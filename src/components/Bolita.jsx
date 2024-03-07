@@ -39,7 +39,7 @@ export const Bolita = ({setActivar,activar,posicion,setPosicion}) => {
         top:-20,
         width: 40,
         height: 40,
-        transform: `translate(${posicion.x}px, ${posicion.y}px)`, 
+        transform: `translate(${posicion?.x}px, ${posicion?.y}px)`, 
       
       }}/>
        <button className="boton-bolita-activar" onClick={()=>setActivar(!activar)} >{activar ? "Desactivar":"Activar"} </button>
