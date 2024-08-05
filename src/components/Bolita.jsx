@@ -6,7 +6,7 @@ export const Bolita = ({setActivar,activar,posicion,setPosicion}) => {
   useEffect(() => {
     const manejarMovimiento =(evento)=>{
       const {clientX,clientY} = evento;
-      console.log("manejar movimiento",{clientX,clientY});
+    
       setPosicion({x:clientX,y:clientY})
     }
     if(activar){
